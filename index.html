@@ -192,7 +192,7 @@ Zhejiang University<br><sup>2</sup>Alibaba Cloud</span>
 <!-- End image carousel -->
 
 
-<!-- Image carousel -->
+<!-- Image samples -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -210,7 +210,7 @@ Using the UCF-Crime dataset as a case study, we observe that only 12% of the tex
   </div>
 </div>
 </section>
-<!-- End image carousel -->
+<!-- End image samples -->
 
 
 <!-- MSTA -->
@@ -218,9 +218,10 @@ Using the UCF-Crime dataset as a case study, we observe that only 12% of the tex
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Multi-stage Textual Augmentation</h2>
+        <h2 class="title is-3">Multi-stage Textual Augmentation (MSTA)</h2>
         <div class="content has-text-justified">
           <p>
+            We introduce an in-context learning (ICL) based multi- stage textual augmentation (MSTA) mechanism aimed at generating more high-quality abnormal textual samples to counteract the bias of the text feature extractor fine-tuning.
           </p>
         </div>
       </div>
@@ -229,7 +230,7 @@ Using the UCF-Crime dataset as a case study, we observe that only 12% of the tex
 </section>
 <!-- End MSTA -->
       
-<!-- Image carousel -->
+<!-- Image MSTA -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -245,50 +246,43 @@ Using the UCF-Crime dataset as a case study, we observe that only 12% of the tex
   </div>
 </div>
 </section>
-<!-- End image carousel -->
+<!-- End image MSTA -->
 
-
+<!-- MSBT -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">MSBT-based Multimodal Video Anomaly Detection</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose a multi-scale bottleneck transformer (MSBT) module that improves inter-modality integration. This module employs a reduced set of bottleneck tokens to progressively convey condensed information between modalities, effectively capturing complex dependencies.The proposed MSBT-based textual-guided multimodal video anomaly detection (TG-MVAD) framework is shown below. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End MSBT -->
   
-  
 
-<!-- Image carousel -->
+<!-- Image MSBT -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/MSBT.jpg" alt="MSTA"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          An overview of the proposed framework. It includes three unimodal encoders, a multi-scale bottleneck transformer, and a global encoder for multimodal feature generation. Each unimodal encoder consists of a modality-specific feature extractor and a linear projection layer for tokenization and a modality-shared transformer for context aggregation within one modality. The multi-scale bottleneck transformer (MSBT) fuses any pair of modalities and a sub-module to weight concatenated fused features. The global encoder, implemented by a transformer, aggregates context overall snippets. Finally, the final anomaly score is constructed by combining the anomaly scores from the fused features and the anomaly probabilities from the text. 
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
 </div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End image MSBT -->
 
 
 
