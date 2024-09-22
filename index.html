@@ -212,19 +212,13 @@ Using the UCF-Crime dataset as a case study, we observe that only 12% of the tex
 </section>
 <!-- End image carousel -->
 
-<img src="static/images/imbalanced_text_samples.jpg" alt="imbalanced text samples"/>
-<h2 class="subtitle has-text-centered">
-The textual descriptions of anomalous events are often scarce and may contain ambiguities, we observed that directly applying the textual features extracted by the vanilla feature extractor to anomaly detection did not yield satisfactory performance. This observation encourages us to fine-tune a text feature extractor for the specific task of video anomaly detection. However, the scarcity of anomalous events results in a predominance of normal text samples within the video data.
-  
-Using the UCF-Crime dataset as a case study, we observe that only 12% of the textual samples are classified as anomalies. This imbalance in the dataset introduces bias during the feature extractor fine-tuning. To address this issue, we propose the multi-stage textual augmentation (MSTA) approach, which generates a greater number of high-quality anomaly samples to address the challenge of sample imbalance.
-</h2>
 
 <!-- MSTA -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Multi-stage Textual Augmentation (MSTA)</h2>
+        <h2 class="title is-3">Multi-stage Textual Augmentation</h2>
         <div class="content has-text-justified">
           <p>
           </p>
@@ -233,12 +227,28 @@ Using the UCF-Crime dataset as a case study, we observe that only 12% of the tex
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+<!-- End MSTA -->
       
-<img src="static/images/MSTA.jpg" alt="MSTA"/>
-TEST
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/MSTA.jpg" alt="MSTA"/>
+        <h2 class="subtitle has-text-centered">
+          Illustration of the proposed multi-stage textual augmentation (MSTA). (a) Stage-I: We use an LLM to summarize all captions in the videos, obtaining labeled text samples. (b) Stage-II: based on the summarized captions, we utilize ICL to generate pseudo-labels for each caption within the video. (c) Stage-III: We employ the labeled samples from the previous two stages, using ICL to generate new anomalous samples.
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- End image carousel -->
 
 
+  
   
 
 <!-- Image carousel -->
