@@ -199,7 +199,7 @@ Zhejiang University<br><sup>2</sup>Alibaba Cloud</span>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/imbalanced_text_samples.jpg" alt="imbalanced text samples"/>
+        <img src="static/images/imbalanced_text_samples.jpg" alt="imbalanced text samples" style="width: 70%; height: auto; display: block; margin: 0 auto;"/>
         <h2 class="subtitle has-text-centered">
           The textual descriptions of anomalous events are often scarce and may contain ambiguities, we observed that directly applying the textual features extracted by the vanilla feature extractor to anomaly detection did not yield satisfactory performance. This observation encourages us to fine-tune a text feature extractor for the specific task of video anomaly detection. However, the scarcity of anomalous events results in a predominance of normal text samples within the video data.
   
@@ -237,7 +237,7 @@ Using the UCF-Crime dataset as a case study, we observe that only 12% of the tex
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/MSTA.jpg" alt="MSTA"/>
+        <img src="static/images/MSTA.jpg" alt="MSTA" style="width: 90%; height: auto; display: block; margin: 0 auto;"/>
         <h2 class="subtitle has-text-centered">
           Illustration of the proposed multi-stage textual augmentation (MSTA). (a) Stage-I: We use an LLM to summarize all captions in the videos, obtaining labeled text samples. (b) Stage-II: based on the summarized captions, we utilize ICL to generate pseudo-labels for each caption within the video. (c) Stage-III: We employ the labeled samples from the previous two stages, using ICL to generate new anomalous samples.
         </h2>
@@ -273,7 +273,7 @@ Using the UCF-Crime dataset as a case study, we observe that only 12% of the tex
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/MSBT.jpg" alt="MSTA" style="width: 50%; height: auto; display: block; margin: 0 auto;"/>
+        <img src="static/images/MSBT.jpg" alt="MSBT" style="width: 60%; height: auto; display: block; margin: 0 auto;"/>
         <h2 class="subtitle has-text-centered">
           An overview of the proposed framework. It includes three unimodal encoders, a multi-scale bottleneck transformer, and a global encoder for multimodal feature generation. Each unimodal encoder consists of a modality-specific feature extractor and a linear projection layer for tokenization and a modality-shared transformer for context aggregation within one modality. The multi-scale bottleneck transformer (MSBT) fuses any pair of modalities and a sub-module to weight concatenated fused features. The global encoder, implemented by a transformer, aggregates context overall snippets. Finally, the final anomaly score is constructed by combining the anomaly scores from the fused features and the anomaly probabilities from the text. 
         </h2>
