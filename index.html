@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Enhancing Weakly Supervised Multimodal Video Anomaly Detection through Textual Guidance with Text Guiding</title>
+  <title>Enhancing Weakly Supervised Multimodal Video Anomaly Detection through Text Guidance</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-2 publication-title">Enhancing Weakly Supervised Multimodal Video Anomaly Detection through Text Guidance <br> with Textual Guiding</h1>
+            <h1 class="title is-2 publication-title">Enhancing Weakly Supervised Multimodal Video Anomaly Detection through Text Guidance</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -114,7 +114,7 @@ Zhejiang University<br><sup>2</sup>Alibaba Cloud</span>
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        We propose a novel textual-guided weakly supervised multimodal video anomaly detection (TG-MVAD) framework. In detail, we introduce a multi-stage text augmentation (MSTA) mechanism to generate high-quality anomaly text samples, counteracting training biases, and obtaining a text feature extractor that is better suited for anomaly detection. Additionally, we present a multi-scale bottleneck transformer (MSBT) fusion module to enhance multimodal integration, utilizing a set of reduced bottleneck tokens to progressively transmit compressed information across modalities.
+        We propose a novel text-guided weakly supervised multimodal video anomaly detection (TG-MVAD) framework. In detail, we introduce a multi-stage text augmentation (MSTA) mechanism to generate high-quality anomaly text samples, counteracting training biases, and obtaining a text feature extractor that is better suited for anomaly detection. Additionally, we present a multi-scale bottleneck transformer (MSBT) fusion module to enhance multimodal integration, utilizing a set of reduced bottleneck tokens to progressively transmit compressed information across modalities.
       </h2>
     </div>
   </div>
@@ -163,7 +163,7 @@ Zhejiang University<br><sup>2</sup>Alibaba Cloud</span>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In recent years, weakly supervised multimodal video anomaly detection, which leverages RGB, optical flow, and audio modalities, has garnered significant attention from researchers, emerging as a vital subfield within video anomaly detection. However, previous studies have inadequately explored the role of textual modalities in this domain. With the proliferation of large-scale text-annotated video datasets and the advent of video captioning models, obtaining textual descriptions from videos has become increasingly feasible. Textual modalities, carrying explicit semantic information, can more accurately characterize events within videos and identify anomalies, thereby enhancing the model's detection capabilities and reducing false alarms. To investigate the impact of textual modalities on video anomaly detection, we propose a novel textual-guided weakly supervised multimodal video anomaly detection framework. Specifically, we introduce an in-context learning based multi-stage textual augmentation mechanism to generate high-quality anomaly text samples, counteracting training biases, and obtaining a text feature extractor that is better suited for anomaly detection. Additionally, we present a multi-scale bottleneck transformer fusion module to enhance multimodal integration, utilizing a set of reduced bottleneck tokens to progressively transmit compressed information across modalities. Experimental results on large-scale datasets UCF-Crime and XD-Violence demonstrate that our proposed approach achieves state-of-the-art performance.
+           In recent years, weakly supervised multimodal video anomaly detection, which leverages RGB, optical flow, and audio modalities, has garnered significant attention from researchers, emerging as a vital subfield within video anomaly detection. However, previous studies have inadequately explored the role of text modality in this domain. With the proliferation of large-scale text-annotated video datasets and the advent of video captioning models, obtaining text descriptions from videos has become increasingly feasible. Text modality, carrying explicit semantic information, can more accurately characterize events within videos and identify anomalies, thereby enhancing the model's detection capabilities and reducing false alarms. To investigate the impact of text modality on video anomaly detection, we propose a novel text-guided weakly supervised multimodal video anomaly detection framework. Specifically, we introduce an in-context learning based multi-stage text augmentation mechanism to generate high-quality anomaly text samples, counteracting training biases, and obtaining a text feature extractor that is better suited for anomaly detection. Additionally, we present a multi-scale bottleneck transformer fusion module to enhance multimodal integration, utilizing a set of reduced bottleneck tokens to progressively transmit compressed information across modalities. Experimental results on large-scale datasets UCF-Crime and XD-Violence demonstrate that our proposed approach achieves state-of-the-art performance. 
           </p>
         </div>
       </div>
@@ -200,9 +200,9 @@ Zhejiang University<br><sup>2</sup>Alibaba Cloud</span>
         <!-- Your image here -->
         <img src="static/images/imbalanced_text_samples.jpg" alt="imbalanced text samples" style="width: 70%; height: auto; display: block; margin: 0 auto;"/>
         <h2 class="subtitle has-text-centered">
-          The textual descriptions of anomalous events are often scarce and may contain ambiguities, we observed that directly applying the textual features extracted by the vanilla feature extractor to anomaly detection did not yield satisfactory performance. This observation encourages us to fine-tune a text feature extractor for the specific task of video anomaly detection. However, the scarcity of anomalous events results in a predominance of normal text samples within the video data.
+          The text descriptions of anomalous events are often scarce and may contain ambiguities, we observed that directly applying the text features extracted by the vanilla feature extractor to anomaly detection did not yield satisfactory performance. This observation encourages us to fine-tune a text feature extractor for the specific task of video anomaly detection. However, the scarcity of anomalous events results in a predominance of normal text samples within the video data.
   
-Using the UCF-Crime dataset as a case study, we observe that only 12% of the textual samples are classified as anomalies. This imbalance in the dataset introduces bias during the feature extractor fine-tuning. To address this issue, we propose the multi-stage textual augmentation (MSTA) approach, which generates a greater number of high-quality anomaly samples to address the challenge of sample imbalance.
+Using the UCF-Crime dataset as a case study, we observe that only 12% of the text samples are classified as anomalies. This imbalance in the dataset introduces bias during the feature extractor fine-tuning. To address this issue, we propose the multi-stage text augmentation (MSTA) approach, which generates a greater number of high-quality anomaly samples to address the challenge of sample imbalance.
         </h2>
       </div>
     </div>
@@ -220,7 +220,7 @@ Using the UCF-Crime dataset as a case study, we observe that only 12% of the tex
         <h2 class="title is-3">Multi-stage Textual Augmentation (MSTA)</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce an in-context learning (ICL) based multi- stage textual augmentation (MSTA) mechanism aimed at generating more high-quality abnormal textual samples to counteract the bias of the text feature extractor fine-tuning.
+            We introduce an in-context learning (ICL) based multi-stage text augmentation (MSTA) mechanism aimed at generating more high-quality abnormal text samples to counteract the bias of the text feature extractor fine-tuning.
           </p>
         </div>
       </div>
@@ -238,7 +238,7 @@ Using the UCF-Crime dataset as a case study, we observe that only 12% of the tex
         <!-- Your image here -->
         <img src="static/images/MSTA.jpg" alt="MSTA" style="width: 80%; height: auto; display: block; margin: 0 auto;"/>
         <h2 class="subtitle has-text-centered">
-          Illustration of the proposed multi-stage textual augmentation (MSTA). (a) Stage-I: We use an LLM to summarize all captions in the videos, obtaining labeled text samples. (b) Stage-II: based on the summarized captions, we utilize ICL to generate anomaly scores as pseudo-labels for each caption within the video. (c) Stage-III: We employ the labeled samples from the previous two stages, using ICL to generate new anomalous samples.
+          Illustration of the proposed multi-stage text augmentation (MSTA). (a) Stage-I: We use an LLM to summarize all captions in the videos, obtaining labeled text samples. (b) Stage-II: based on the summarized captions, we utilize ICL to generate anomaly scores as pseudo-labels for each caption within the video. (c) Stage-III: We employ the labeled samples from the previous two stages, using ICL to generate new anomalous samples.
         </h2>
       </div>
     </div>
@@ -255,7 +255,7 @@ Using the UCF-Crime dataset as a case study, we observe that only 12% of the tex
         <h2 class="title is-3">MSBT-based Multimodal Video Anomaly Detection</h2>
         <div class="content has-text-justified">
           <p>
-            We propose a multi-scale bottleneck transformer (MSBT) module that improves inter-modality integration. This module employs a reduced set of bottleneck tokens to progressively convey condensed information between modalities, effectively capturing complex dependencies.The proposed MSBT-based textual-guided multimodal video anomaly detection (TG-MVAD) framework is shown below. 
+            We propose a multi-scale bottleneck transformer (MSBT) module that improves inter-modality integration. This module employs a reduced set of bottleneck tokens to progressively convey condensed information between modalities, effectively capturing complex dependencies.The proposed MSBT-based text-guided multimodal video anomaly detection (TG-MVAD) framework is shown below. 
           </p>
         </div>
       </div>
